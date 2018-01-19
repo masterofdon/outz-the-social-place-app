@@ -14,8 +14,8 @@ import com.outz.app.repo.user.A2UserDao;
 import com.outz.app.repo.user.AccountDao;
 import com.outz.app.repo.user.U1UserDao;
 import com.outz.app.repo.user.U2UserDao;
-import com.outz.app.util.OutzRandom;
-import com.outz.app.util.OutzTime;
+import com.outz.app.utils.OutzRandom;
+import com.outz.app.utils.OutzTime;
 
 @Service
 public class AccountService {

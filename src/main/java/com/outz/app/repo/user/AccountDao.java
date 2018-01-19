@@ -15,6 +15,6 @@ public interface AccountDao extends JpaRepository<Account, String>{
 	@Query(value="SELECT c FROM Account c WHERE user_id=?1")
 	Account findByUser(String userid);
 	
-	@Query(value="SELECT c FROM Account c, User d WHERE d.username=?1 AND c.user.id=d.id")
+	@Query(value="SELECT c FROM Account c, User d WHERE d.username=?1 AND c.accountHolder.id=d.id")
 	Account findByUsername(String username);
 }

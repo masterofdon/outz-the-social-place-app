@@ -25,7 +25,7 @@ public class CDNServer {
 	@Id
 	@GenericGenerator(
 			name = "outz-random-15",
-	        strategy = "com.outz.webm.utils.StringSequenceIdentifier"
+	        strategy = "com.outz.app.utils.StringSequenceIdentifier"
     )
 	@GeneratedValue(generator = "outz-random-15")
 	private String id;

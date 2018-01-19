@@ -1,4 +1,4 @@
-package com.outz.app.util;
+package com.outz.app.utils;
 
 import java.util.Random;
 

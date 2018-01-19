@@ -1,26 +1,18 @@
 package com.outz.app.entity.business;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.GenericGenerator;
 
 import com.outz.app.entity.account.Account;
 import com.outz.app.entity.base.Address;
 
 @Entity
-@Table(name="outz_company")
-public class Company {
+@Table(name="outz_organization")
+public class Organization {
 
 	@Id
-	@GenericGenerator(
-			name = "outz-random-15",
-	        strategy = "com.outz.app.utils.StringSequenceIdentifier"
-    )
-	@GeneratedValue(generator = "outz-random-15")
 	private String id;
 	
 	private String name;
@@ -40,7 +32,7 @@ public class Company {
 	}
 
 	public String getName() {
-		return this.name;
+		return name;
 	}
 
 	public void setName(String name) {
@@ -62,4 +54,6 @@ public class Company {
 	public void setContact(Account contact) {
 		this.contact = contact;
 	}
+	
+	
 }

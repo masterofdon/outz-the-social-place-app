@@ -15,13 +15,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.apache.tomcat.jni.Address;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.GenericGenerator;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.outz.app.entity.account.Account;
+import com.outz.app.entity.base.Address;
 import com.outz.app.entity.place.PlaceTable;
 import com.outz.app.entity.place.PlaceTableCategory;
 
@@ -32,7 +32,7 @@ public class CompanyEntity {
 	@Id
 	@GenericGenerator(
 			name = "outz-random-15",
-	        strategy = "com.outz.webm.utils.StringSequenceIdentifier"
+	        strategy = "com.outz.app.utils.StringSequenceIdentifier"
     )
 	@GeneratedValue(generator = "outz-random-15")
 	private String id;
